@@ -1,0 +1,213 @@
+# ==============================================================================
+# Your_Cart - Production Git Ignore Configuration
+# Universal Shopping Cart & Intelligent Product Availability and Price Tracking
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment & Secret Credentials (CRITICAL - NEVER COMMIT SECRETS)
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.env
+*.env.*
+!.env.example
+!.env.template
+
+# Private Keys, Certificates & Tokens
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+*.asc
+id_rsa*
+id_ed25519*
+secrets/
+credentials/
+*.secret
+jwt_secret*
+
+# ------------------------------------------------------------------------------
+# 2. Google Cloud Platform & Firebase Credentials
+# ------------------------------------------------------------------------------
+# Service account JSON keys & tokens
+*service-account*.json
+*service_account*.json
+*serviceAccountKey*.json
+*gcp-key*.json
+*gcp*.json
+gcp-credentials.json
+credentials.json
+client_secret*.json
+
+# Firebase local caches and runtime logs
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+database-debug.log*
+pubsub-debug.log*
+
+# Google Cloud SDK configurations
+.gcloud/
+
+# ------------------------------------------------------------------------------
+# 3. Python & Virtual Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing, Type Checking & Code Quality
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+cython_debug/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ------------------------------------------------------------------------------
+# 4. Node.js, Next.js & Frontend Tooling
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Next.js build output
+.next/
+out/
+
+# Build artifacts & caches
+.turbo/
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+ts-node/
+coverage/
+
+# ------------------------------------------------------------------------------
+# 5. Database & Persistent Storage Artifacts
+# ------------------------------------------------------------------------------
+*.sql
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.rdb
+dump.rdb
+
+# ------------------------------------------------------------------------------
+# 6. Logs & Process Files
+# ------------------------------------------------------------------------------
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# ------------------------------------------------------------------------------
+# 7. Operating System & Temporary Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+[Tt]emp/
+[Tt]mp/
+
+# ------------------------------------------------------------------------------
+# 8. IDEs & Editors
+# ------------------------------------------------------------------------------
+# Visual Studio Code (ignore user state, preserve shared workspace settings if needed)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (IntelliJ, PyCharm, WebStorm)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Other Editors
+.sublime-project
+.sublime-workspace
+.project
+.classpath
+.cproject
+.settings/
+
